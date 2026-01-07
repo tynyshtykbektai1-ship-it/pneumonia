@@ -12,23 +12,6 @@ export const metadata: Metadata = {
   description:
     "Advanced AI-powered pneumonia detection system using deep learning and computer vision. Терең оқыту және компьютерлік көру технологиялары арқылы пневмонияны анықтау жүйесі.",
   generator: "v0.app",
-  icons: {
-    icon: [
-      {
-        url: "/justicon.png",
-        media: "(prefers-color-scheme: light)",
-      },
-      {
-        url: "/justicon.png",
-        media: "(prefers-color-scheme: dark)",
-      },
-      {
-        url: "/icon.svg",
-        type: "image/svg+xml",
-      },
-    ],
-    apple: "/justicon.png",
-  },
 }
 
 export const viewport: Viewport = {
