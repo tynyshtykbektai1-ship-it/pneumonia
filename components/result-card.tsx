@@ -77,7 +77,7 @@ export function ResultCard({ prediction, confidence }: ResultCardProps) {
 
             {/* Lung illustration */}
             <div className="w-32 h-32 mt-4">
-              <LungIllustration result={isPneumonia ? "pneumonia" : "normal"} />
+              <LungIllustration result={isPneumonia ? "PNEUMONIA" : "NORMAL"} />
             </div>
           </div>
 
