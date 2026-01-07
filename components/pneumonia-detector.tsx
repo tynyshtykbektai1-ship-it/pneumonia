@@ -9,7 +9,7 @@ import { LoadingAnimation } from "./loading-animation"
 import { LungIllustration } from "./lung-illustration"
 
 interface PredictionResult {
-  prediction: "Pneumonia" | "Normal"
+  prediction: "PNEUMONIA" | "NORMAL"
   confidence: number
 }
 
@@ -41,7 +41,7 @@ export function PneumoniaDetector() {
       const formData = new FormData()
       formData.append("image", selectedFile)
 
-      const response = await fetch("/api/predict", {
+      const response = await fetch("https://tynyshtyk-pneumonia.hf.space/pneumonia/", {
         method: "POST",
         body: formData,
       })
@@ -56,7 +56,7 @@ export function PneumoniaDetector() {
       console.error("Error analyzing image:", error)
       // For demo purposes, show a mock result
       setResult({
-        prediction: Math.random() > 0.5 ? "Pneumonia" : "Normal",
+        prediction: Math.random() > 0.5 ? "PNEUMONIA" : "NORMAL",
         confidence: 0.85 + Math.random() * 0.1,
       })
     } finally {
