@@ -2,13 +2,13 @@
 
 interface LungIllustrationProps {
   isAnalyzing?: boolean
-  result?: "pneumonia" | "normal" | null
+  result?: "PNEUMONIA" | "NORMAL" | null
 }
 
 export function LungIllustration({ isAnalyzing, result }: LungIllustrationProps) {
   const getColor = () => {
-    if (result === "pneumonia") return "text-destructive"
-    if (result === "normal") return "text-accent"
+    if (result === "PNEUMONIA") return "text-destructive"
+    if (result === "NORMAL") return "text-accent"
     return "text-primary"
   }
 
