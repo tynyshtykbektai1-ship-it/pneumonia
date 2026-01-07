@@ -39,7 +39,7 @@ export function PneumoniaDetector() {
 
     try {
       const formData = new FormData()
-      formData.append("file", selectedFile)
+      formData.append("image", selectedFile)
 
       const response = await fetch("https://tynyshtyk-pneumonia.hf.space/predict", {
         method: "POST",
